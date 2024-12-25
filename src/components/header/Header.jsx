@@ -1,27 +1,27 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import ME from '../../assets/me3.png'
-import HeaderSocials from './HeaderSocials'
+import React from 'react';
+import './header.css';
+import CTA from './CTA';
+import ME from '../../assets/img1.avif';
+import HeaderSocials from './HeaderSocials';
 
-const header = () => {
-    return (
-        <header>
-            <div className="container header__container">
-                <h5> Hello I'm</h5>
-                <h1>Paras Bhardwaj</h1>
-                <h5 className="text-light">Fresher Security Engineer</h5>
-                <CTA />
-                <HeaderSocials />
+const Header = () => {
+  return (
+    <header className='flex flex-col justify-center items-center lg:mt-12 xl:mt-20 md:mt-20 relative'>
+    <div className="flex flex-col justify-center items-center ">
+        <h5 className='xl:text-2xl lg:text-xl text-light'>Hello I'm</h5>
+        <h1 className='xl:text-8xl lg:text-7xl md:text-4.5xl lg:mt-5'>Paras Bhardwaj</h1>
+        <h5 className="text-light lg:text-xl xl:text-2xl lg:mt-5">Fresher Security Engineer</h5>
+    </div>
+        <CTA />
+        <HeaderSocials className=""/>
+        <div className="my-10 px-20 ">
+          <img src={ME} alt="me" width={100} className="w-[20rem] md:w-[30rem] lg:w-[40rem] xl:w-[60rem] "  />
+        </div>
+        
+      
+     
+    </header>
+  );
+};
 
-                <div className="me">
-                    <img src={ME} alt="me" className='imgw' />
-                </div>
-
-                <a href="#contact" className='scroll__down'>Scroll Down</a>
-            </div>
-        </header>
-    )
-}
-
-export default header
+export default Header;

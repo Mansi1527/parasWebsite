@@ -41,7 +41,7 @@ const data2 = [
     {
         id: 1,
         image: IMG4,
-        title: 'Data leak worksheet',
+        title: 'Data leak worksheet Data leak worksheet',
         github: 'https://github.com/mazer0P/Google-Cybersecurity-Certificate/blob/main/Course%20Support%20Files/Activity%20Template_%20Data%20leak%20worksheet.pdf',
         demo: 'https://nguyenvu1310.github.io/',
     },
@@ -71,9 +71,9 @@ const data2 = [
 
 const Portfolio = () => {
     return (
-        <section id='portfolio'>
-            <h5>My Recent Projects</h5>
-            <h2>Portfolio</h2>
+        <section id='portfolio' className='mb-20'>
+            <h5 className='text-lg xl:text-2xl'>My Recent Projects</h5>
+            <h2 className='mt-5 text-4xl lg:text-5xl xl:text-6xl mb-10'>Portfolio</h2>
             <div className="container portfolio__container">
                 {
                     data1.map(({ id, image, title, github, demo }) => {
@@ -92,8 +92,8 @@ const Portfolio = () => {
                     })
                 }
             </div>
-            <div className='hr'></div>
-            <h2>Work in Cybersecurity</h2>
+            
+            <h2 className='lg:text-3xl underline my-10'>Work in Cybersecurity</h2>
             <div className="container portfolio__container">
                 {
                     data2.map(({ id, image, title, github, demo }) => {

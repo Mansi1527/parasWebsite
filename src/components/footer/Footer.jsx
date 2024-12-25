@@ -14,7 +14,7 @@ import { ImBlogger2 } from 'react-icons/im';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='w-full'>
             {/* Footer logo */}
             <a href="/" className='footer__logo'>Paras Bhardwaj</a>
 
